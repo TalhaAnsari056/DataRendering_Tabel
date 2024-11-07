@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>while</title>
+
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        position: relative;
+      }
+      .main{
+        
+        display: flex;
+        gap: 10px;
+        
+      }
+      .groupDiv{
+        padding: 15px;
+        border: 5px solid rgb(247, 5, 5);
+        padding: 30px;
+        border-radius: 20px;
+      }
+      .modal-parent {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.902);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+      }
+      .modal {
+        height: 200px;
+        width: 500px;
+        background-color: rgb(216, 123, 123);
+      }
+      .user-div {
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid black;
+      }
+
+      .modal-body{
+        height: 90%;
+        overflow: scroll;
+      }
+      tr,th,td {
+        border: 3px solid rgb(146, 33, 33);
+        border-radius: 10px;
+        padding: 5px;
+        text-align: center;
+        background-color: rgb(163, 152, 152);
+        color: black;
+        outline: none;
+      }
+      button{
+        border-radius: 20px;
+        background-color: blueviolet;
+        color: black;
+        padding: 10px;
+        border: 5px solid rgb(90, 5, 170);
+      }
+      .groupDiv{
+        background-color: #4285F4;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="modal-parent">
+      <div class="modal">
+        <div class="modal-head">
+            <button onClick="closeModal()">close</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
